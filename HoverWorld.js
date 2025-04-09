@@ -54,6 +54,7 @@ objectElement.addEventListener("load", () => {
 
 
 // Id countries
+// https://simplemaps.com/resources/svg-world
 // {
 //     "AF": "Afghanistan", 
 //      "AL": "Albania", 
