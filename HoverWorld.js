@@ -1,46 +1,58 @@
-const countries = document.querySelectorAll("#world-map path");
 const tooltip = document.getElementById("tooltip");
+const objectElement = document.querySelector("object");
 
 const countryData = {
   IQ: {
-    name: "Iraq",
+    name: "Iraq 🇮🇶",
     capital: "Baghdad",
-    population: "40 million",
+    products: "40 million"
   },
   IR: {
-    name: "Iran",
+    name: "Iran 🇮🇷",
     capital: "Tehran",
-    population: "86 million",
+    products: "86 million"
   },
   US: {
-    name: "United States",
+    name: "United States 🇺🇸",
     capital: "Washington, D.C.",
-    population: "331 million",
+    products: "331 million"
   },
+  AF: {
+    name: "افغانستان",
+    capital: "کابل",
+    products: "تریاک  فرش  سنگ"
+  }
 };
 
-countries.forEach((country) => {
-  country.addEventListener("mouseenter", (e) => {
-    const id = country.id;
-    const data = countryData[id];
-    if (data) {
-      tooltip.innerHTML = `
-        <strong>${data.name}</strong><br>
-        Capital: ${data.capital}<br>
-        Population: ${data.population}
-      `;
-      tooltip.style.display = "block";
-      tooltip.style.top = e.clientY + 10 + "px";
-      tooltip.style.left = e.clientX + 10 + "px";
+objectElement.addEventListener("load", () => {
+  const svgDoc = objectElement.contentDocument;
+
+  Object.keys(countryData).forEach((code) => {
+    const countryPath = svgDoc.getElementById(code);
+    const data = countryData[code];
+
+    if (countryPath) {
+      countryPath.style.cursor = "pointer";
+      
+
+
+      countryPath.addEventListener("mouseenter", () => {
+        countryPath.setAttribute("fill", "#ffb703"); // رنگ هاور مثلاً نارنجی
+        tooltip.innerHTML = `<strong>${data.name}</strong><br>پایتخت: ${data.capital}<br>محصولات: ${data.products}`;
+        tooltip.style.display = "block";
+      });
+
+      countryPath.addEventListener("mousemove", (e) => {
+        tooltip.style.top = e.clientY + 15 + "px";
+        tooltip.style.left = e.clientX + 15 + "px";
+      });
+
+      countryPath.addEventListener("mouseleave", () => {
+        countryPath.setAttribute("fill", "#ccc"); // برگردوندن به رنگ قبلی
+        tooltip.style.display = "none";
+      });
+    } else {
+      console.warn(`کشور با ID '${code}' پیدا نشد!`);
     }
-  });
-
-  country.addEventListener("mousemove", (e) => {
-    tooltip.style.top = e.clientY + 10 + "px";
-    tooltip.style.left = e.clientX + 10 + "px";
-  });
-
-  country.addEventListener("mouseleave", () => {
-    tooltip.style.display = "none";
   });
 });
