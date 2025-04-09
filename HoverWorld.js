@@ -15,7 +15,7 @@ const countryData = {
   AF: {
     name: "افغانستان",
     capital: "کابل",
-    products: "تریاک  فرش  سنگ"
+    products: "تریاک  فرش  سنگ تریاک  فرش  سنگ تریاک  فرش  سنگ"
   }
 };
 
@@ -33,8 +33,8 @@ objectElement.addEventListener("load", () => {
 
       countryPath.addEventListener("mouseenter", () => {
         countryPath.setAttribute("fill", "#ffb703"); // رنگ هاور مثلاً نارنجی
-        tooltip.innerHTML = `<strong>${data.name}</strong><br>پایتخت: ${data.capital}<br>محصولات: ${data.products}`;
-        tooltip.style.display = "block";
+        tooltip.innerHTML = `<strong>${data.name}</strong> <div class="box-products"> <img src="images/stone 2.jpg" class="stone-icon" alt="stone"> <p class="products">${data.products}</p>  </div>`;
+        tooltip.style.display = "flex";
       });
 
       countryPath.addEventListener("mousemove", (e) => {
