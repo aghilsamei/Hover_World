@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Map Hover Info</title>
+  <link rel="stylesheet" href="HoverWorld.css" />
+</head>
+<body>
+
+  <h1>Interactive World Map</h1>
+
+  <div class="map-container">
+    <!-- نقشه SVG (مثال ساده‌شده) -->
+    <svg id="world-map" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+      <!-- Iraq -->
+      <path id="IQ" d="M200,200 L220,200 L220,220 L200,220 Z" fill="#ccc" stroke="#333" />
+      <!-- Iran -->
+      <path id="IR" d="M240,200 L260,200 L260,220 L240,220 Z" fill="#ccc" stroke="#333" />
+      <!-- US -->
+      <path id="US" d="M100,100 L140,100 L140,130 L100,130 Z" fill="#ccc" stroke="#333" />
+    </svg>
+
+    <div id="tooltip" class="tooltip"></div>
+  </div>
+
+  <script src="HoverWorld.js"></script>
+</body>
+</html>
