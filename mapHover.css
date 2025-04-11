@@ -1,0 +1,61 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+.title-map{
+    font-size: 64px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.map-contaner{
+    width:90%;
+    border-radius: 8px;
+    background-color: #c2dfff;
+    border: 1px solid #00000038;
+    box-shadow: 2px 2px 2px 2px #00000045;
+}
+.simplemaps_popup {
+    direction: rtl; /* راست‌چین کردن محتوای پاپ‌آپ */
+    text-align: right; /* متن داخل پاپ‌آپ را به راست بچینید */
+  }
+
+  /* */
+  .tt_sm{border-radius: 5px;box-shadow: 3px 3px 4px rgba(0,0,0,.5); z-index: 1000000;   background-color: #ffffff; max-width: 260px;  padding: 15px; opacity:0.9; font: 28px/1.5 Verdana, Arial, Helvetica, sans-serif; color: black; } 
+  .tt_name_sm{float: right; font-weight: bold} 
+  .xmark_sm{float: right; margin-left: 5px; cursor: pointer; line-height: 0px;}  
+  .tt_custom_sm{ text-align: right; font: 18px/1.5 Verdana, Arial, Helvetica, sans-serif;} 
+  .tt_mobile_sm{margin-top: 5px;} 
+  .btn_simplemaps{color: black;text-decoration: none;background: #fff;display: inline-block;padding: 5px 5px;margin: 0; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 1.43;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border: 1px solid;border-radius: 4px;}   
+  .btn_simplemaps:hover{text-decoration: underline;}
+
+  .img-stone{
+    width: 20px;
+    height: 15px;
+    box-shadow:3px 3px 4px rgba(0,0,0,.5) ;
+  }
+  .descriptions-box{
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .description-p{
+    font-size: 24px;
+  }
+  .cover-tag{
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
