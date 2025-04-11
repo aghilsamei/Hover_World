@@ -1,46 +1,42 @@
-# 🗺️ Hover World Map - کشورها و اطلاعات آنها
+# 🗺️ Hover World Map - Countries and Their Information
 
-یک نقشه SVG از جهان که با هاور کردن روی هر کشور، اطلاعات دلخواه مثل پایتخت، محصولات یا جمعیت آن کشور نمایش داده می‌شود.
+An interactive SVG world map that displays custom information such as capital cities, main products, or population when hovering over each country.
 
-## 🌐 دموی پروژه
+## 🌐 see a screenshot:
 
-📺 [دموی آنلاین](https://your-demo-link.com) *(در گیت‌هاب پیج یا هاست آپلود کن و لینک بده)*  
-یا یک تصویر:
-
-![World Map Demo](./screenshot.png)
+![World Map Demo](./screen shot.png)
 
 ---
 
-## ✨ ویژگی‌ها
+## ✨ Features
 
-- نمایش نقشه کامل جهان با فرمت SVG
-- هاور روی هر کشور و نمایش اطلاعات اختصاصی
-- رنگی شدن کشور هنگام هاور
-- قابلیت توسعه برای افزودن اطلاعات بیشتر
-- کاملاً قابل شخصی‌سازی
+- Full SVG world map
+- Hover effect on each country displaying custom data
+- Country highlights on hover
+- Easily extendable for more data points
+- Fully customizable styles and behavior
 
 ---
 
-## 🧩 تکنولوژی‌های استفاده‌شده
+## 🧩 Technologies Used
 
-| بخش | توضیحات |
+| Component | Description |
 |-----|---------|
-| HTML | ساختار صفحه |
-| CSS | استایل‌دهی و tooltip |
-| JavaScript | تعامل با SVG، نمایش اطلاعات و مدیریت هاور |
-| SVG | نقشه جهان با استفاده از مسیرهای برداری (vector) |
+| HTML |Page structure |
+| CSS | Styling customizable |
+| JavaScript | Interaction handling, hover effects, and data display|
+| SVG |World map using scalable vector paths |
 
 ---
 
-## 🗃️ منابع
+## 🗃️ Resources
 
-نقشه SVG از سایت فوق‌العاده [SimpleMaps](https://simplemaps.com/resources/svg-world) گرفته شده است.  
-📍 [لینک مستقیم به نقشه](https://simplemaps.com/resources/svg-world)
+📍 [Direct link to the map](https://simplemaps.com/resources/svg-world)
 
 ---
 
-## 🔧 نحوه استفاده
+## 🔧How to Use
 
-1. پروژه را کلون یا دانلود کن:
+1. Clone or download the project:
    ```bash
-   git clone https://github.com/your-username/your-project-name.git
+   git clone https://github.com/Hover_World/.git
