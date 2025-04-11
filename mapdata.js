@@ -75,24 +75,26 @@ var simplemaps_worldmap_mapdata={
     AF: {
       name: "افغانستان",
       description: `<div class="descriptions-box">
-      <p class="description-p">سنگ گران قیمت سفید سنگ گران قیمت سفید</p>
+      <p class="description-p">سنگ گران قیمت سفید</p>
       <img src="stone1.jpg" alt="stone" class="img-stone">
       </div>`,
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+       
     },
     AO: {
       name: "Angola",
       description: "default",
-      color: "default",
+      color: "red",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      popup: 'off' //dont show information
     },
     AL: {
       name: "Albania",
       description: "default",
-      color: "default",
+      color: "red",
       hover_color: "default",
       url: "default"
     },
@@ -553,10 +555,14 @@ var simplemaps_worldmap_mapdata={
     },
     IR: {
       name: "Iran",
-      description: "default",
-      color: "default",
+      description: `<div class="descriptions-box">
+      <p class="description-p">زعفران فرش </p>
+      <img src="stone1.jpg" alt="stone" class="img-stone">
+      </div>`,
+      color: "gold",
       hover_color: "default",
       url: "default"
+      
     },
     IQ: {
       name: "Iraq",
